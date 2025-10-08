@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/views/home_view.dart';
+import 'package:toku_app/features/home/presentation/views/home_view.dart';
 
 void main() {
   runApp(const TokuApp());
@@ -10,6 +10,6 @@ class TokuApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomeView());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeView());
   }
 }
